@@ -16,5 +16,28 @@ namespace project3
         {
             InitializeComponent();
         }
+
+        private void convert_Click(object sender, EventArgs e)
+
+        {
+            //Variables
+
+            double value;
+
+
+            //Input
+
+            value = double.Parse(textBox1.Text);
+
+
+            //Output
+
+            label4.Text = value.ToString("");
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

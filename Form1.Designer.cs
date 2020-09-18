@@ -60,6 +60,10 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "Inches",
+            "Feet",
+            "Yards"});
             this.listBox1.Location = new System.Drawing.Point(412, 154);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(100, 56);
@@ -86,11 +90,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Location = new System.Drawing.Point(412, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
             // 
             // label5
             // 
@@ -112,6 +115,10 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
+            this.listBox2.Items.AddRange(new object[] {
+            "Inches",
+            "Feet",
+            "Yards"});
             this.listBox2.Location = new System.Drawing.Point(220, 154);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(100, 56);
@@ -125,6 +132,7 @@
             this.convert.TabIndex = 9;
             this.convert.Text = "Convert";
             this.convert.UseVisualStyleBackColor = true;
+            this.convert.Click += new System.EventHandler(this.convert_Click);
             // 
             // exit
             // 
@@ -134,6 +142,7 @@
             this.exit.TabIndex = 10;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // Form1
             // 
