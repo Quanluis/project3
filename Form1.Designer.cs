@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.convert = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -57,17 +57,17 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // listBox1
+            // listBox2
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Items.AddRange(new object[] {
             "Inches",
             "Feet",
             "Yards"});
-            this.listBox1.Location = new System.Drawing.Point(412, 154);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(100, 56);
-            this.listBox1.TabIndex = 2;
+            this.listBox2.Location = new System.Drawing.Point(412, 154);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(100, 56);
+            this.listBox2.TabIndex = 2;
             // 
             // label2
             // 
@@ -112,17 +112,17 @@
             this.result.Size = new System.Drawing.Size(0, 13);
             this.result.TabIndex = 7;
             // 
-            // listBox2
+            // listBox1
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
             "Inches",
             "Feet",
             "Yards"});
-            this.listBox2.Location = new System.Drawing.Point(220, 154);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(100, 56);
-            this.listBox2.TabIndex = 8;
+            this.listBox1.Location = new System.Drawing.Point(220, 154);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(100, 56);
+            this.listBox1.TabIndex = 8;
             // 
             // convert
             // 
@@ -151,13 +151,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.convert);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -171,13 +171,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button convert;
         private System.Windows.Forms.Button exit;
     }
