@@ -44,22 +44,27 @@ namespace project3
                     }
                         fromInput = listBox1.SelectedItem.ToString();
 
+                        // Inches index 
+
                         if (listBox1.SelectedIndex == 0 && listBox2.SelectedIndex == 0)
                         {
 
                             label4.Text = value.ToString("");
                         }
-                        if(listBox1.SelectedIndex == 0 && listBox2.SelectedIndex == 1)
+                        if (listBox1.SelectedIndex == 0 && listBox2.SelectedIndex == 1)
                         {
                             convertedValue = value / 12;
                             label4.Text = convertedValue.ToString("");
                         }
-                        if(listBox1.SelectedIndex == 0 && listBox2.SelectedIndex == 2)
+                        if (listBox1.SelectedIndex == 0 && listBox2.SelectedIndex == 2)
                         {
                             convertedValue =  value / 36;
-                        label4.Text = convertedValue.ToString("");
+                            label4.Text = convertedValue.ToString("");
                         }
-                        if(listBox1.SelectedIndex == 1 && listBox2.SelectedIndex == 0)
+
+                        // Feet index 
+
+                        if (listBox1.SelectedIndex == 1 && listBox2.SelectedIndex == 0)
                         {
                             convertedValue = value * 12 ;
                             label4.Text = convertedValue.ToString("");
@@ -73,16 +78,28 @@ namespace project3
                             convertedValue = value / 3;
                             label4.Text = convertedValue.ToString("");
                         }
+
+                        // Yards index 
+
+                        if (listBox1.SelectedIndex == 2 && listBox2.SelectedIndex == 0)
+                        {
+                            convertedValue = value * 36;
+                            label4.Text = convertedValue.ToString("");
+                        }
+                        if (listBox1.SelectedIndex == 2 && listBox2.SelectedIndex == 1)
+                        {
+                            convertedValue = value * 3;
+                            label4.Text = convertedValue.ToString("");
+                        }
+                        if (listBox1.SelectedIndex == 2 && listBox2.SelectedIndex == 2)
+                        {
+                            label4.Text = value.ToString("");
+                        }
                 }          
                 else
                 {
                     MessageBox.Show("Select both 'From / To' Conversion Value");
                 }
-
-
-                //Output
-
-                
 
             }
             catch
